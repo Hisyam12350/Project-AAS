@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantap</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-blue-400 p-5 sm:p-10 text-3xl sm:text-4xl flex">
+    <h1 class="pr-5 sm:pr-20">E-COM</h1>
+    <div class="text-xl sm:text-2xl flex items-center relative">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+            <i class="fa fa-search"></i>
+        </span>
+        <input class="w-auto h-8 sm:h-10 bg-blue-100 shadow-xl rounded-full hover:bg-gray-300 hover:transition-all duration-300 text-center focus:border-transparent focus:outline-blue-300"
+        type="text" id="search" placeholder="Pencarian" required>
+        <div class="pl-10 sm:pl-110 space-y-2">
+            <button class="px-5 sm:px-7 hover:bg-gray-300 hover:transition-all duration-300 bg-blue-100 rounded-full w-auto h-8 sm:h-10">Login</button>
+            <button class="px-5 sm:px-7 hover:bg-gray-300 hover:transition-all duration-300 bg-blue-100 rounded-full w-auto h-8 sm:h-10">Register</button>
+        </div>
+    </div>
+    </nav>
+
+    <div id="data" class="grid grid-cols-4 gap-5 p-5">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+<!-- <script>
+    async function getDataProduct() {
+        let res = await fetch("https://fakestoreapi.com/products")
+
+        let data = await res.json()
+        let output = document.getElementById("data")
+
+        data.forEach(element => {
+            let card =`
+            <div class"w-full h-60 bg-light-gray rounded-2xl shadow-lg/50 hover:bg-gray-300 hover:transition-all duration-300">
+                <p class="text-center mt-4 font-sans font-bold text-lg">${element.title}</p>
+                <img class"h-10" src=${element.image}>
+                <p class="text-center ml-12 mt-4 font-sans font-medium text-2 w-50">RP${element.price}</p>
+            </div>`
+                   
+            const append = document.createElement('div')
+            //document.getElementById("data").innerHTML += formattedstring
+            append.innerHTML = card
+            output.appendChild(append)
+            
+        });
+    }
+    getDataProduct();
+</script> -->
+</html>
